@@ -2,11 +2,14 @@
 
 [中文说明](#中文说明) | [English](#english)
 
+> **⚠️ 注意：本应用必须拥有 Root 权限（Magisk / KernelSU / APatch）才能正常运行。**
+> **⚠️ Note: Root access (Magisk / KernelSU / APatch) is strictly required for this app to work.**
+
 ---
 
 ## 中文说明
 
-一款轻量级、高颜值的 Android 应用冻结工具。基于 Kotlin + Jetpack Compose 构建，采用 Material Design 3 Expressive (MD3E) 设计语言，底层通过常驻 Root Shell 调用 `pm disable` / `pm enable` 实现极速冻结与解冻。
+一款需要 **Root 权限** 的轻量级、高颜值 Android 应用冻结工具。基于 Kotlin + Jetpack Compose 构建，采用 Material Design 3 Expressive (MD3E) 设计语言，底层通过常驻 Root Shell 调用 `pm disable` / `pm enable` 实现极速冻结与解冻。
 
 ### 核心特性
 
@@ -18,12 +21,12 @@
 
 ### 环境要求
 
+- **必需权限：设备已获取 Root 权限（Magisk / KernelSU / APatch），不支持免 Root / Shizuku 模式。**
 - 系统版本：Android 8.0 (API 26) 及以上
-- 权限要求：设备已获取 Root 权限（支持 Magisk / KernelSU / APatch）
 
 ### 使用说明
 
-1. 首次打开应用，点击右上角 `+` 按钮，在弹出列表中勾选需要冻结的应用。
+1. 首次打开应用并授予 **Root 权限**，点击右上角 `+` 按钮，在弹出列表中勾选需要冻结的应用。
 2. 点击右下角「一键冻结」悬浮按钮，即可批量冻结列表内所有正在运行的应用。
 3. 需要临时使用时，直接在冰箱列表中点击对应应用，软件会自动解冻并跳转打开；用完后返回一键冻结即可。
 4. 如需将某个应用移出冰箱列表，长按该应用卡片即可。
@@ -46,7 +49,7 @@
 
 ## English
 
-A lightweight, Material Design 3 Expressive (MD3E) Android application freezer built with Kotlin and Jetpack Compose. It utilizes a persistent Root Shell (`pm disable` / `pm enable`) for instant batch freezing and one-tap unfreeze-to-launch.
+A lightweight, **Root-required**, Material Design 3 Expressive (MD3E) Android application freezer built with Kotlin and Jetpack Compose. It utilizes a persistent Root Shell (`pm disable` / `pm enable`) for instant batch freezing and one-tap unfreeze-to-launch.
 
 ### Features
 
@@ -58,12 +61,12 @@ A lightweight, Material Design 3 Expressive (MD3E) Android application freezer b
 
 ### Requirements
 
+- **Root Access Required: A rooted device (Magisk / KernelSU / APatch) is mandatory. Non-root / Shizuku modes are not supported.**
 - Android 8.0 (API 26) or higher
-- Root access (Magisk / KernelSU / APatch)
 
 ### Usage
 
-1. Open the app and tap the top-right `+` button to add apps to your freeze list.
+1. Open the app, grant **Root access**, and tap the top-right `+` button to add apps to your freeze list.
 2. Tap the bottom-right "Freeze All" floating button to freeze all active apps in the list at once.
 3. Tap any frozen app card in the list to automatically unfreeze and launch it.
 4. Long-press any app card to remove it from the freeze list.
